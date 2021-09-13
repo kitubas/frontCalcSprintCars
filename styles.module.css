@@ -1,0 +1,143 @@
+
+.topo {
+   position: fixed;
+   width: 100vw;
+    background-color: #40423c;
+    color: #ffffff;
+  
+    top: 0;
+    left:0
+}
+
+.logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:italic;
+    color: #fc8600;
+    font-size: 30pt;
+    padding-left: 4vh;
+    margin-left: 15px;
+    
+}
+.container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;   
+    margin: 2rem 0;
+}
+.ancora{
+    color: #f1f5f8;
+    text-decoration: none;
+    margin:0 20px 0;
+    font-size: 16pt;
+    
+
+    transition: .2s ease all;
+  padding-bottom:5px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.ancora:hover{
+    border-bottom: solid #fc8600;
+    color: #fc8600;
+
+}
+
+.navegacao{
+   
+    
+    margin:0 20px 0 0;
+}
+
+/* começa footer */
+
+.rodape{
+    position: fixed;
+    width: 100vw;
+     background-color: #40423c;
+     color: #ffffff;
+    
+     bottom: 0;
+     left:0
+ }
+ 
+ .logoFundo {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-style:italic;
+ color: #fc8600;
+ font-size: 30pt;
+ padding-left: 4vh;
+ margin:20px 0px 10px 15px;
+ 
+ }
+ 
+ .row{
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+     flex-wrap: wrap; 
+     margin:0px 10px 10px 0px;
+    
+     
+     
+ }
+ 
+ .ulista{
+     list-style-type: none;
+     margin: 40px 60px 20px 60px;
+     
+    
+     
+ }
+ 
+ .tituloFundo{
+     color: #fc8600;
+     font-style: normal;
+     font-size: 15pt;
+     text-transform: uppercase;
+     border-bottom: dashed #fc8600;
+     margin: 1px 0px  10px;
+     padding: 0px 0px 16px;
+ }
+ 
+ .lista{
+     font-size: 18pt;
+ }
+
+ .ancoraFooter{
+    color: #f1f5f8;
+    text-decoration: none;
+    /* margin:0 20px 0; */
+    font-size: 16pt;
+    
+
+    transition: .2s ease all;
+  padding-bottom:5px;
+    text-align: center;
+    text-decoration: none;
+    }
+ 
+.ancoraFooter:hover{
+    border-bottom: solid #fc8600;
+    color: #fc8600;
+
+
+}
+
+ #icones{
+     cursor: pointer;
+     color: #ffffff;
+     font-size: 20pt;
+     margin: 5px 40px 0 0px;
+     transition: .5s ease all;
+     
+ }
+ 
+ #icones:hover{
+     color:#fc8600;
+     transform:scale(1.1);
+ }
+     
