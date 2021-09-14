@@ -1,7 +1,7 @@
 
 .topo {
    position: relative;
-   width: 100vw;
+   width: 100%;
     background-color: #40423c;
     color: #ffffff;
   
@@ -78,7 +78,9 @@ main p, select{
     display: inline;
 }
 
-
+#resposta{
+    display: block;
+}
 
 
 
@@ -87,12 +89,10 @@ main p, select{
 
 .rodape{
     position: relative;
-    width: 100vw;
+    width: 100%;
      background-color: #40423c;
      color: #ffffff;
     
-     bottom: 0;
-     left:0
  }
  
  .logoFundo {
@@ -101,7 +101,7 @@ main p, select{
  color: #fc8600;
  font-size: 30pt;
  padding-left: 4vh;
- margin:20px 0px 10px 15px;
+ margin:1.25rem 0rem 0.625rem 0.9375rem;
  
  }
  
@@ -110,7 +110,7 @@ main p, select{
     justify-content: space-evenly;
     align-items: center;
      flex-wrap: wrap; 
-     margin:0px 10px 10px 0px;
+     margin:0rem 0.625rem 0.625rem 0rem;
     
      
      
@@ -118,7 +118,7 @@ main p, select{
  
  .ulista{
      list-style-type: none;
-     margin: 40px 60px 20px 60px;
+     margin: 2.5rem 3.75rem 1.25rem 3.75rem;
      
     
      
@@ -130,8 +130,8 @@ main p, select{
      font-size: 15pt;
      text-transform: uppercase;
      border-bottom: dashed #fc8600;
-     margin: 1px 0px  10px;
-     padding: 0px 0px 16px;
+     margin: 0.0625rem 0rem  0.625rem;
+     padding: 0rem 0rem 1rem;
  }
  
  .lista{
@@ -146,7 +146,7 @@ main p, select{
     
 
     transition: .2s ease all;
-  padding-bottom:5px;
+  padding-bottom:0.3125rem;
     text-align: center;
     text-decoration: none;
     }
@@ -162,7 +162,7 @@ main p, select{
      cursor: pointer;
      color: #ffffff;
      font-size: 20pt;
-     margin: 5px 40px 0 0px;
+     margin: 0.3125rem 2.5rem 0 0rem;
      transition: .5s ease all;
      
  }

@@ -37,8 +37,9 @@
       <div class="botoesPesquisa">
         <fieldset>
           <p class="tituloSelect">Escolha o modelo do seu veículo:</p>
-          <input type="text" name="" id="" placeholder="Escolha o modelo">
-          <button onclick="">procurar</button>
+          <input type="text" class="inputModelo" name="" id="inputModelo" placeholder="Escolha o modelo">
+          <button onclick="procurarNome()">procurar</button>
+         
           <!-- <div class="opcoesSelect">
           <select name="" id="opcoesVeiculo">
             <option value="">Kwid</option>
@@ -48,6 +49,7 @@
         </div> -->
 
         </fieldset>
+       
         <fieldset>
           <p>Tempo ficaria com o carro:</p>
           <select name="" id="opcoesTempo">
@@ -69,6 +71,9 @@
       </div>
 
     </form>
+    <div id="resposta" >
+            
+    </div>
 
   </main>
 
@@ -106,6 +111,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="Calculadora.js"></script>
 
 </body>
 
