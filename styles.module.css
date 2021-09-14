@@ -1,6 +1,6 @@
 
 .topo {
-   position: fixed;
+   position: relative;
    width: 100vw;
     background-color: #40423c;
     color: #ffffff;
@@ -52,10 +52,41 @@
     margin:0 20px 0 0;
 }
 
+
+
+
+/* começa o main */
+
+main{
+    background-color: #40423c;
+    border: #fc8600 solid 2px;
+    display: block;
+    color: aliceblue;
+    
+}
+
+main div .botoesPesquisa{
+    display: inline-block;
+}
+
+main fieldset{
+    display: flex;
+
+}
+
+main p, select{
+    display: inline;
+}
+
+
+
+
+
+
 /* começa footer */
 
 .rodape{
-    position: fixed;
+    position: relative;
     width: 100vw;
      background-color: #40423c;
      color: #ffffff;
