@@ -61,16 +61,38 @@
 
 /* começa o main */
 
+
 .containerMain{
     margin: 2rem;
 }
+.secaoPrincipal{
+    border: solid 0.1875rem #fc8600; 
+    border-radius: 20px;
+    margin: 4rem auto;
+    width: 37.5rem;
+    
 
+
+}
+form{
+    margin: 0 auto;
+}
+fieldset{
+    border: none;
+}
 table{
     margin: 0 auto;
     text-align: center;
 }
 .tituloTabela{
     text-align: center;
+}
+
+input{
+    outline: 0;
+    border: #fc8600 solid 2px ;
+    border-radius: 30px;
+    padding: 10px;
 }
 
 /* começa footer */
