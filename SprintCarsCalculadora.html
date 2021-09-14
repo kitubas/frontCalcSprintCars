@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="../../Cursos/Alura/HTMLCSS/2/reset.css"> -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="styles.module.css">
-  <title>Sprint Cars</title>
+  <title>Document</title>
 </head>
 
 <body>
@@ -28,19 +26,20 @@
       </nav>
     </div>
   </header>
-
   <main>
-    <form action="">
-      <h2>Simulação</h2>
-      <p>Faça uma simulação de quanto sairá seu próximo período com a gente</p>
+    <section class="secaoPrincipal">
+      <div class="containerMain">
+        <form action="">
+          <h2>Simulação</h2>
+          <p>Faça uma simulação de quanto sairá seu próximo período com a gente</p>
 
-      <div class="botoesPesquisa">
-        <fieldset>
-          <p class="tituloSelect">Escolha o modelo do seu veículo:</p>
-          <input type="text" class="inputModelo" name="" id="inputModelo" placeholder="Escolha o modelo">
-          <button onclick="procurarNome()">procurar</button>
-         
-          <!-- <div class="opcoesSelect">
+          <div class="botoesPesquisa">
+            <fieldset>
+              <p class="tituloSelect">Escolha o modelo do seu veículo:</p>
+              <input type="text" class="inputModelo" name="" id="inputModelo" placeholder="Escolha o modelo">
+              <button onclick="procurarNome()">procurar</button>
+
+              <!-- <div class="opcoesSelect">
           <select name="" id="opcoesVeiculo">
             <option value="">Kwid</option>
             <option value="">Renegade</option>
@@ -48,36 +47,89 @@
           </select>
         </div> -->
 
-        </fieldset>
-       
-        <fieldset>
-          <p>Tempo ficaria com o carro:</p>
-          <select name="" id="opcoesTempo">
-            <option value="">1 ano</option>
-            <option value="">2 ano</option>
-            <option value="">3 ano</option>
-          </select>
+            </fieldset>
 
-        </fieldset>
+            <fieldset>
+              <p>Tempo ficaria com o carro:</p>
+              <select name="" id="opcoesTempo">
+                <option value="">1 ano</option>
+                <option value="">2 ano</option>
+                <option value="">3 ano</option>
+              </select>
 
-        <fieldset>
-          <p>Quanto quilômetros você roda por mês?</p>
-          <select name="" id="opcoesKm">
-            <option value="">100 km</option>
-            <option value="">200 km</option>
-            <option value="">300 km</option>
-          </select>
-        </fieldset>
-      </div>
+            </fieldset>
 
-    </form>
-    <div id="resposta" >
-            
-    </div>
+            <fieldset>
+              <p>Quanto quilômetros você roda por mês?</p>
+              <select name="" id="opcoesKm">
+                <option value="">100 km</option>
+                <option value="">200 km</option>
+                <option value="">300 km</option>
+              </select>
+            </fieldset>
+          </div>
 
+        </form>
+        <div id="resposta">
+
+        </div>
+    </section>
+    <section class="containerMain">
+      <h2 class="tituloTabela">Meus pacientes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Peso(kg)</th>
+            <th>Altura(m)</th>
+            <th>Gordura Corporal(%)</th>
+            <th>IMC</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-pacientes">
+          <tr class="paciente">
+            <td class="info-nome">Paulo</td>
+            <td class="info-peso">150</td>
+            <td class="info-altura">2.00</td>
+            <td class="info-gordura">10</td>
+            <td class="info-imc">0</td>
+          </tr>
+
+          <tr class="paciente">
+            <td class="info-nome">João</td>
+            <td class="info-peso">80</td>
+            <td class="info-altura">1.72</td>
+            <td class="info-gordura">40</td>
+            <td class="info-imc">0</td>
+          </tr>
+
+          <tr class="paciente">
+            <td class="info-nome">Erica</td>
+            <td class="info-peso">54</td>
+            <td class="info-altura">1.64</td>
+            <td class="info-gordura">14</td>
+            <td class="info-imc">0</td>
+          </tr>
+
+          <tr class="paciente">
+            <td class="info-nome">Douglas</td>
+            <td class="info-peso">500</td>
+            <td class="info-altura">1.73</td>
+            <td class="info-gordura">24</td>
+            <td class="info-imc">0</td>
+          </tr>
+          <tr class="paciente">
+            <td class="info-nome">Tatiana</td>
+            <td class="info-peso">46</td>
+            <td class="info-altura">1.55</td>
+            <td class="info-gordura">19</td>
+            <td class="info-imc">0</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
   </main>
-
-
   <footer class="rodape">
     <h1 class="logoFundo">SprintCars </h1>
     <div class="container">
@@ -103,9 +155,9 @@
         <div class="subcontainer">
           <ul class="ulista">
             <h5 class="tituloFundo">Redes sociais</h5>
-            <i class="fab fa-instagram" id="icones" />
-            <i className="fab fa-twitter-square" id="icones" />
-            <i className="fab fa-whatsapp-square" id="icones" />
+            <i class="fab fa-instagram" id="icones"></i>
+            <i class="fab fa-twitter-square" id="icones"> </i>
+            <i class="fab fa-whatsapp-square" id="icones"> </i>
           </ul>
         </div>
       </div>
@@ -113,7 +165,7 @@
   </footer>
 
   <script src="Calculadora.js"></script>
-
+  <script src="https://kit.fontawesome.com/7e82b8f437.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
