@@ -74,12 +74,28 @@
 
 
 }
+
+.secaoPrincipal h2{
+    margin: 1rem;
+}
+
+.secaoPrincipal p{
+    margin: 1rem 1rem 0.5rem 1rem;
+    font-size: x-large;
+}
+
 form{
     margin: 0 auto;
 }
 fieldset{
     border: none;
 }
+
+.pOpcoes{
+    display: inline-block;
+}
+
+
 table{
     margin: 0 auto;
     text-align: center;
@@ -93,6 +109,38 @@ input{
     border: #fc8600 solid 2px ;
     border-radius: 30px;
     padding: 10px;
+    margin-left: 1rem;
+    margin-top: 0.5rem ;
+}
+
+select{
+    outline: 0;
+    border: #fc8600 solid 2px ;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 0.5rem ;
+    background-color: #40423c;
+    color: #ffffff;
+}
+
+button{
+    outline: 0;
+    border: #fc8600 solid 2px ;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 1rem;
+    margin-top: 0.5rem ;
+    background-color: #40423c;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 0 #010101;
+    }
+
+#butaoCalcular{
+    height: 4rem;
+    width: 8rem;
+    font-size: large;
+    
 }
 
 /* começa footer */

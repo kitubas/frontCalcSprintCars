@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.module.css">
-  <title>Document</title>
+  <title>Calculadora</title>
 </head>
 
 <body>
@@ -31,26 +31,21 @@
       <div class="containerMain">
         <form action="">
           <h2>Simulação</h2>
-          <p>Faça uma simulação de quanto sairá seu próximo período com a gente</p>
+          <p>Faça uma simulação de quanto sairá seu próximo período com a gente:</p>
 
           <div class="botoesPesquisa">
             <fieldset>
               <p class="tituloSelect">Escolha o modelo do seu veículo:</p>
-              <input type="text" class="inputModelo" name="" id="inputModelo" placeholder="Escolha o modelo" >
+              <input required type="text" class="inputModelo" name="" id="inputModelo" placeholder="Escolha o modelo">
               <button onclick="procurarNome()">procurar</button>
-
-              <!-- <div class="opcoesSelect">
-          <select name="" id="opcoesVeiculo">
-            <option value="">Kwid</option>
-            <option value="">Renegade</option>
-            <option value="">Uno</option>
-          </select>
-        </div> -->
-
             </fieldset>
 
+            <div id="resposta">
+
+            </div>
+
             <fieldset>
-              <p>Tempo ficaria com o carro:</p>
+              <p class="pOpcoes">Tempo ficaria com o carro:</p>
               <select name="" id="opcoesTempo">
                 <option value="">1 ano</option>
                 <option value="">2 ano</option>
@@ -60,19 +55,20 @@
             </fieldset>
 
             <fieldset>
-              <p>Quanto quilômetros você roda por mês?</p>
+              <p class="pOpcoes">Quanto quilômetros você roda por mês?</p>
               <select name="" id="opcoesKm">
                 <option value="">100 km</option>
                 <option value="">200 km</option>
                 <option value="">300 km</option>
               </select>
             </fieldset>
+            <button type="submit" onclick="calcular()" id="butaoCalcular" >Calcular</button>
+             <!-- <input type="button" value="Calcular" onclick="calcular()" > -->
           </div>
 
+         
         </form>
-        <div id="resposta">
-
-        </div>
+        
     </section>
     <section class="containerMain">
       <h2 class="tituloTabela">Meus pacientes</h2>
