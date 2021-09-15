@@ -69,7 +69,7 @@
     border: solid 0.1875rem #fc8600; 
     border-radius: 20px;
     margin: 4rem auto;
-    width: 37.5rem;
+    max-width: 37.5rem;
     
 
 
