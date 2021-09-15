@@ -6,8 +6,7 @@ function procurarNome() {
     let nomeCarro = String(nomessss.value);
     let img=document.createElement('img');
     img.setAttribute('id', 'foto');
-    resposta.innerHTML='';
-      
+    resposta.innerHTML=' '
   
 
     if (nomeCarro.length === 0) {
@@ -21,8 +20,9 @@ function procurarNome() {
             img.setAttribute('src' , 'img/kwid.png');
 
            
+            
         }
-       
+        
     
         if (nomeCarro === "renegade") {
 
@@ -47,8 +47,12 @@ function procurarNome() {
 
         
         }
-        resposta.appendChild(img);
-
+        
     }
+    
+    resposta.appendChild(img);
+    
+    
+    
 }
 
