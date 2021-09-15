@@ -121,6 +121,8 @@ select{
     margin-top: 0.5rem ;
     background-color: #40423c;
     color: #ffffff;
+    box-shadow: 1px 1px 1px 0 #010101;
+
 }
 
 button{
@@ -140,7 +142,7 @@ button{
     height: 4rem;
     width: 8rem;
     font-size: large;
-    
+
 }
 
 /* começa footer */
