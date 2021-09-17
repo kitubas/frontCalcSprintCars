@@ -6,7 +6,7 @@ function procurarNome() {
     let nomeCarro = String(nomessss.value);
     let img=document.createElement('img');
     img.setAttribute('id', 'foto');
-    resposta.innerHTML=' '
+   
   
 
     if (nomeCarro.length === 0) {
@@ -24,7 +24,7 @@ function procurarNome() {
         }
         
     
-        if (nomeCarro === "renegade") {
+        else if (nomeCarro === "renegade") {
 
             img.setAttribute('src' , 'img/renegade.png');
 
@@ -32,7 +32,7 @@ function procurarNome() {
         }
       
     
-        if (nomeCarro === "uno") {
+        else if (nomeCarro === "uno") {
 
             
             img.setAttribute('src' , 'img/uno.png');
@@ -41,7 +41,7 @@ function procurarNome() {
         }
        
     
-        if (nomeCarro === "camaro") {
+        else if (nomeCarro === "camaro") {
 
             img.setAttribute('src' , 'img/camaro.png');
 
@@ -49,10 +49,13 @@ function procurarNome() {
         }
         
     }
+   
     
     resposta.appendChild(img);
     
     
     
 }
+
+
 
