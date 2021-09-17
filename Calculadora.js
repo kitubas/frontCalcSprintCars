@@ -1,61 +1,12 @@
-//calculadora sprintcar
-//Autores:Henrique Leite e Antonio Alves
 
-function procurarNome() {
-    let nomessss = document.getElementById('inputModelo');
-    let nomeCarro = String(nomessss.value);
-    let img=document.createElement('img');
-    img.setAttribute('id', 'foto');
-   
-  
+function Calcular(){
+    window.alert('funfando')
+let pacientes = document.querySelectorAll(".paciente");//a tabela se comporta como array a partir de pacinetes agnt contecta com o dado que agnt vai utilizar.
+let tempoAno=document.querySelector('#opcoesTempo');//vamo fzr para cada option, só foi de teste.
+let kilometragem=document.querySelector('#opcoesKm');//vamo fzr para cada option, só foi de teste.
 
-    if (nomeCarro.length === 0) {
-        window.alert('escolha um modelo de carro!');
-    }
-    else {
-        if (nomeCarro === "kwid") {
-            
-            
 
-            img.setAttribute('src' , 'img/kwid.png');
-
-           
-            
-        }
-        
-    
-        else if (nomeCarro === "renegade") {
-
-            img.setAttribute('src' , 'img/renegade.png');
-
-        
-        }
-      
-    
-        else if (nomeCarro === "uno") {
-
-            
-            img.setAttribute('src' , 'img/uno.png');
-
-        
-        }
-       
-    
-        else if (nomeCarro === "camaro") {
-
-            img.setAttribute('src' , 'img/camaro.png');
-
-        
-        }
-        
-    }
-   
-    
-    resposta.appendChild(img);
-    
-    
-    
+console.log(pacientes);
+console.log(tempoAno);
+console.log(kilometragem);
 }
-
-
-

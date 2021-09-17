@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.module.css">
+  <link rel="stylesheet" href="reset.css">
   <title>Calculadora</title>
 </head>
 
@@ -47,9 +48,9 @@
             <fieldset>
               <p class="pOpcoes">Tempo ficaria com o carro:</p>
               <select name="" id="opcoesTempo">
-                <option value="">1 ano</option>
-                <option value="">2 ano</option>
-                <option value="">3 ano</option>
+                <option value=""class="um-ano">1 ano</option>
+                <option value=""class="dois-ano">2 ano</option>
+                <option value=""class="tres-ano">3 ano</option>
               </select>
 
             </fieldset>
@@ -57,13 +58,16 @@
             <fieldset>
               <p class="pOpcoes">Quanto quilômetros você roda por mês?</p>
               <select name="" id="opcoesKm">
-                <option value="">100 km</option>
-                <option value="">200 km</option>
-                <option value="">300 km</option>
+                <option value="" class="cem-km">100 km</option>
+                <option value=""class="duzentos-km">200 km</option>
+                <option value=""class="trezentos-km">300 km</option>
               </select>
             </fieldset>
-            <button type="submit" onclick="calcular()" id="butaoCalcular" >Calcular</button>
+            <div>
+              <button type="submit" onclick="Calcular()" id="butaoCalcular" >Calcular</button>
+
              <!-- <input type="button" value="Calcular" onclick="calcular()" > -->
+            </div>
           </div>
 
          
@@ -72,7 +76,7 @@
     </section>
     <section class="containerMain">
       <h2 class="tituloTabela">Meus pacientes</h2>
-      <table>
+      <table id="tabela">
         <thead>
           <tr>
             <th>Nome</th>
@@ -160,7 +164,8 @@
     </div>
   </footer>
 
-  <script src="Calculadora.js"></script>
+  <script src="pesquisa.js"></script>
+  <script src="calculadora.js"></script>
   <script src="https://kit.fontawesome.com/7e82b8f437.js" crossorigin="anonymous"></script>
 </body>
 

@@ -122,6 +122,13 @@ select{
     background-color: #40423c;
     color: #ffffff;
     box-shadow: 1px 1px 1px 0 #010101;
+    cursor:pointer;
+    transition: .5s ease all;
+
+}
+select:hover{
+    background-color: white;
+    color: black;
 
 }
 
@@ -136,7 +143,15 @@ button{
     color: #ffffff;
     cursor: pointer;
     box-shadow: 1px 1px 1px 0 #010101;
-    }
+    transition: .1s ease all;
+
+}
+
+button:active{
+    transform:scale(1.1);
+    background-color: white;
+    color: black;
+}
 
 #butaoCalcular{
     height: 4rem;
@@ -153,7 +168,27 @@ button{
 
 #foto:hover{
     transform:scale(1.1);
+    
 }
+/* tabela */
+#tabela{
+    width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
 
 /* começa footer */
 
@@ -225,4 +260,6 @@ button{
      color:#fc8600;
      transform:scale(1.1);
  }
+
+ 
      
