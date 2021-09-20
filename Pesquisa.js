@@ -2,9 +2,9 @@
 //Autores:Henrique Leite e Antonio Alves
 
 function procurarNome() {
-    let nomessss = document.getElementById('inputModelo');
+    let nomeDoCarro = document.getElementById('inputModelo');
     
-    let nomeCarro = String(nomessss.value);
+    let nomeCarro = String(nomeDoCarro.value);
    
     let img=document.createElement('img');
     img.setAttribute('id', 'foto');
@@ -52,6 +52,3 @@ function procurarNome() {
     resposta.appendChild(img);
     
 }
-
-
-

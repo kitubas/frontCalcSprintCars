@@ -75,8 +75,11 @@
 
 }
 
-.secaoPrincipal h2{
+main .secaoPrincipal h2{
     margin: 1rem;
+    font-size: x-large;
+    font-weight: bold;
+    
 }
 
 .secaoPrincipal p{
