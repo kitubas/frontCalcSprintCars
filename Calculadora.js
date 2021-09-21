@@ -1,15 +1,22 @@
 
+function Calcular() {
+    
+    let nomeDoCarro = document.getElementById('inputModelo');
+    let nomeCarro = String(nomeDoCarro.value);
+    let resultAluguel=document.getElementById('resulado-aluguel')
 
-    function Calcular() {
-        let nomeDoCarro = document.getElementById('inputModelo');
-        let nomeCarro = String(nomeDoCarro.value);
+    //porcetagem
+    let primeiraPorcento = 0.1
+    let segundaPorcento = 0.15
 
-        //porcetagem
-        let primeiraPorcento=0.1
-        let segundaPorcento=0.15
-
-        //precodoBaseDoAluguel
-
+    //tempo-anos
+    let tempo1 = '1 anos'
+    let tempo2 = '2 anos'
+    let tempo3 = '3 anos'
+    //kilometragem
+    let km1 = '100 km'
+    let km2 = '200 km'
+    let km3 = '300 km'
 
     let tempoFicaria = document.getElementById('opcoesTempo');
     let tempoFicariaSelecionado = tempoFicaria.options[tempoFicaria.selectedIndex].text;
@@ -19,8 +26,7 @@
     let kilometragemSelecionada = kilometragem.options[kilometragem
         .selectedIndex].text;
 
-        console.log(kilometragemSelecionada)
-
+    console.log(kilometragemSelecionada)
 
 
 
@@ -32,14 +38,18 @@
         kilometragemSelecionada
     );
 
+    //função pesquisar 
     
+        let Pesquisa=Pesquisar()
+    
+
     function calcularPrecoFinal(precoComeca, tmpSelect, kmSelect) {
-        if (tmpSelect == "1 ano" && kmSelect == "100 km") {
+        if (tmpSelect == tempo1 && kmSelect == km1) {
             return precoComeca;
         }
         else {
             return Number(
-                precoComeca+
+                precoComeca +
                 proporcaoQtdKm(precoComeca, kmSelect) +
                 calcularProporcaoTempo(precoComeca, tmpSelect)
             );
@@ -51,7 +61,7 @@
     function precoBase(nome) {
         if (nome === "kwid") return 1000;
         if (nome === "renegade") return 2000;
-        if (nome ==="uno") return 1500;
+        if (nome === "uno") return 1500;
         if (nome === "camaro") return 3000;
     }
 
@@ -59,10 +69,10 @@
 
     function proporcaoQtdKm(precoInicio, kmSelec) {
 
-        if (kmSelec === kilometragemSelecionada ) {
+        if (kmSelec === km2) {
             return precoInicio * primeiraPorcento;
         }
-        if (kmSelec === kilometragemSelecionada ) {
+        if (kmSelec === km3) {
             return precoInicio * segundaPorcento;
         }
 
@@ -72,23 +82,29 @@
 
     function calcularProporcaoTempo(precoInicio, tmpSelec) {
 
-        if (tmpSelec === tempoFicariaSelecionado) return precoInicio * primeiraPorcento;
-        if (tmpSelec ===tempoFicariaSelecionado) return precoInicio * segundaPorcento;
+        if (tmpSelec === tempo2) return precoInicio * primeiraPorcento;
+        if (tmpSelec === tempo3) return precoInicio * segundaPorcento;
 
         return 0;
     }
 
-
-
-
-    window.alert(`O aluguel sairá por ${precoFinal}`);
     
-   
+   //seção resposta
+    resultAluguel.appendChild(resultado);
+    resultAluguel.classList.add('secao-respota');
 
-
+    resultado.innerHTML=`O aluguel sairá por ${precoFinal}`;
+    
 
     
+
+
+    //criar um elemento do js para o html com o comando createElement("tag html");
+
+
+
+
+
 }
 
 
-    

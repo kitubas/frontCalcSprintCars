@@ -200,9 +200,9 @@ th{
      background-color: #40423c;
      
     
- }
+}
  
- .logoFundo {font-family: Verdana, Geneva, Tahoma, sans-serif;
+.logoFundo {font-family: Verdana, Geneva, Tahoma, sans-serif;
  font-style:italic;
  color: #fc8600;
  font-size: 30pt;
@@ -212,7 +212,7 @@ th{
      
     
  
- }
+}
  
  .row{
      display: flex;
@@ -263,6 +263,20 @@ th{
      color:#fc8600;
      transform:scale(1.1);
  }
+
+#resultado{
+    text-align: center;
+}
+.secao-respota{
+    border-radius: .25rem;
+    padding: 1.25rem 1.875rem;
+    margin: 4rem auto;
+    max-width: 37.5rem;
+    background-color: chocolate;
+
+}
+
+
 
  
      

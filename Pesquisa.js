@@ -1,5 +1,6 @@
 
-function Pesquisar() {
+//export ao lado da função indica que essa função pode ser exportada
+ function Pesquisar() {
 
     let nomeDoCarro = document.getElementById("inputModelo");
     let nomeCarro = String(nomeDoCarro.value);
@@ -49,4 +50,5 @@ function Pesquisar() {
 
 
     }
+
 }

@@ -39,19 +39,18 @@
             <fieldset>
               <p class="tituloSelect">Escolha o modelo do seu veículo:</p>
               <input required type="text" class="inputModelo" name="" id="inputModelo" placeholder="Escolha o modelo">
-              <button  type="button" onclick=" Pesquisar()" >procurar</button>
             </fieldset>
-           
-            <div id="resposta" >
+
+            <div id="resposta">
 
             </div>
 
             <fieldset>
               <p class="pOpcoes">Tempo ficaria com o carro:</p>
               <select name="" id="opcoesTempo">
-                <option value=""class="um-ano">1 ano</option>
-                <option value=""class="dois-ano">2 anos</option>
-                <option value=""class="tres-ano">3 anos</option>
+                <option value="" class="um-ano">1 ano</option>
+                <option value="" class="dois-ano">2 anos</option>
+                <option value="" class="tres-ano">3 anos</option>
               </select>
 
             </fieldset>
@@ -60,21 +59,31 @@
               <p class="pOpcoes">Quanto quilômetros você roda por mês?</p>
               <select name="" id="opcoesKm">
                 <option value="" class="cem-km">100 km</option>
-                <option value=""class="duzentos-km">200 km</option>
-                <option value=""class="trezentos-km">300 km</option>
+                <option value="" class="duzentos-km">200 km</option>
+                <option value="" class="trezentos-km">300 km</option>
               </select>
             </fieldset>
             <div>
-              <button type="submit" onclick=" Calcular() " id="butaoCalcular" >Calcular</button>
+              <button type="submit" onclick=" Calcular() ;return false;" id="butaoCalcular">Calcular</button>
 
-             <!-- <input type="button" value="Calcular" onclick="calcular()" > -->
+              <!-- <input type="button" value="Calcular" onclick="calcular()" > -->
+
             </div>
-          </div>
-
-         
         </form>
-        
+
+      </div>
+      
+
     </section>
+    
+    <section id="resulado-aluguel">
+      <h2>Resultado</h2>
+      
+      <div id="resultado">
+        
+      </div>
+    </section>
+
     <section class="containerMain">
       <h2 class="tituloTabela">Meus pacientes</h2>
       <table id="tabela">
@@ -166,7 +175,7 @@
   </footer>
 
   <script src="Pesquisa.js"></script>
-  <script src="Calculadora.js"></script>
+  <script  src="Calculadora.js"></script>
   <script src="https://kit.fontawesome.com/7e82b8f437.js" crossorigin="anonymous"></script>
 </body>
 
