@@ -37,12 +37,16 @@
             <fieldset>
               <p class="tituloSelect">Escolha o modelo do seu veículo:</p>
               <input required type="text" class="inputModelo" name="" id="inputModelo" placeholder="Escolha o modelo">
-              <button onclick="procurarNome()" type="button">procurar</button>
+              <button  type="button" onclick="Pesquisar()" id='inputModelo' >procurar</button>
+              <div id="resposta" >
+
+              </div>
+              
+
             </fieldset>
+            
 
-            <div id="resposta" >
-
-            </div>
+            
 
             <fieldset>
               <p class="pOpcoes">Tempo ficaria com o carro:</p>
@@ -64,6 +68,8 @@
             </fieldset>
             <button type="submit" onclick="calcular()" id="butaoCalcular" >Calcular</button>
              <!-- <input type="button" value="Calcular" onclick="calcular()" > -->
+             
+
           </div>
 
          
@@ -159,7 +165,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="Pesquisa.js"></script>
   <script src="Calculadora.js"></script>
   <script src="https://kit.fontawesome.com/7e82b8f437.js" crossorigin="anonymous"></script>
 </body>
