@@ -49,20 +49,20 @@
 
     //preço base = O carro rodando 100 km em um ano  
     function precoBase(nome) {
-        if (nome == "kwid") return 1000;
-        if (nome == "renegade") return 2000;
-        if (nome == "uno") return 1500;
-        if (nome == "camaro") return 3000;
+        if (nome === "kwid") return 1000;
+        if (nome === "renegade") return 2000;
+        if (nome ==="uno") return 1500;
+        if (nome === "camaro") return 3000;
     }
 
 
 
     function proporcaoQtdKm(precoInicio, kmSelec) {
 
-        if (kmSelec == kilometragemSelecionada ) {
+        if (kmSelec === kilometragemSelecionada ) {
             return precoInicio * primeiraPorcento;
         }
-        if (kmSelec == kilometragemSelecionada ) {
+        if (kmSelec === kilometragemSelecionada ) {
             return precoInicio * segundaPorcento;
         }
 
@@ -72,8 +72,8 @@
 
     function calcularProporcaoTempo(precoInicio, tmpSelec) {
 
-        if (tmpSelec == tempoFicariaSelecionado) return precoInicio * primeiraPorcento;
-        if (tmpSelec == tempoFicariaSelecionado) return precoInicio * segundaPorcento;
+        if (tmpSelec === tempoFicariaSelecionado) return precoInicio * primeiraPorcento;
+        if (tmpSelec ===tempoFicariaSelecionado) return precoInicio * segundaPorcento;
 
         return 0;
     }
