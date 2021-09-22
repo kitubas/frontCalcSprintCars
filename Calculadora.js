@@ -40,7 +40,7 @@ function Calcular() {
 
     //função pesquisar 
     
-        let Pesquisa=Pesquisar()
+        let Pesquisa=Pesquisar();
     
 
     function calcularPrecoFinal(precoComeca, tmpSelect, kmSelect) {
@@ -100,9 +100,6 @@ function Calcular() {
 
 
     //criar um elemento do js para o html com o comando createElement("tag html");
-
-
-
 
 
 }

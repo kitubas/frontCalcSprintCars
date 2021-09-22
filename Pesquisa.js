@@ -1,6 +1,6 @@
 
 //export ao lado da função indica que essa função pode ser exportada
- function Pesquisar() {
+function Pesquisar() {
 
     let nomeDoCarro = document.getElementById("inputModelo");
     let nomeCarro = String(nomeDoCarro.value);
