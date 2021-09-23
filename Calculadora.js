@@ -1,16 +1,12 @@
 
 function Calcular() {
 
-    let carros = ['kwid', 'uno', 'renegade', 'camaro'];
-
-
-
-
-
     let nomeDoCarro = document.getElementById('inputModelo');
     let nomeCarro = String(nomeDoCarro.value);
     let resultAluguel = document.getElementById('resulado-aluguel')
 
+    //lista dos carros
+    let carros = ['kwid', 'uno', 'renegade', 'camaro'];
 
 
     //porcetagem
@@ -78,16 +74,16 @@ function Calcular() {
 
         for (let i = 0; i < carrosPossiveis.length; i++) {
             let precoComeca = precoBase(carrosPossiveis[i]);
-            let precoTermina = calcularPrecoFinal(
+            let precoFinal = calcularPrecoFinal(
                 precoComeca,
                 tempoFicariaSelecionado,
                 kilometragemSelecionada
             );
 
             
-            let carroTrFor = montarTr(carrosPossiveis[i], tmp, kilometragem, precoTermina);
+            let carroTrFor = montarTr(carrosPossiveis[i], tmp, kilometragem, precoFinal);
 
-    
+                console.log(carroTrFor);
             tbody.appendChild(carroTrFor);
             
         }
@@ -145,13 +141,13 @@ function Calcular() {
         }
     }
 
-
+    //'kwid', 'uno', 'renegade', 'camaro'
     //preço base = O carro rodando 100 km em um ano  
     function precoBase(nome) {
-        if (nome == carros[0]) return 1000;
-        if (nome == carros[1]) return 2000;
-        if (nome == carros[2]) return 1500;
-        if (nome == carros[3]) return 3000;
+        if (nome == 'kwid') return 1000;
+        if (nome == 'uno') return 2000;
+        if (nome =='renegade' ) return 1500;
+        if (nome == 'camaro') return 3000;
     }
 
 
