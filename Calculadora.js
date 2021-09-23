@@ -58,7 +58,6 @@ function Calcular() {
     function criarTabela(carroSelecionado, carrosPossiveis, tmp, kilometragem) {
         let tbody = document.querySelector("#tabela-carros");
         tbody.innerHTML=' ';
-        // tbody.reset();   
 
         let precoInicial = precoBase(carroSelecionado)
         let precoTermina = calcularPrecoFinal(
