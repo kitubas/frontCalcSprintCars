@@ -55,7 +55,7 @@ function Calcular() {
         if (nomes.indexOf(foraDoArray) === -1 && foraDoArray.length > 0) {
 
             let erros = [];
-            window.alert('Esse modelo não se encontra em nossa frota!')
+            window.alert('⚠ Esse modelo não se encontra em nossa frota!')
             erros.push(foraDoArray);
 
             //Recarrega página do servidor (força novo GET)
@@ -63,11 +63,11 @@ function Calcular() {
             return erros;
             
         } 
-        
+
         else {
 
             if (nomeCarro.length === 0) {
-                window.alert('escolha um modelo de carro!');
+                window.alert('⚠ escolha um modelo de carro!');
 
                 //Recarrega página do servidor (força novo GET)
                 window.location.reload(true);
