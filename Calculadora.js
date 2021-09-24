@@ -198,8 +198,8 @@ function Calcular() {
     //preço base = O carro rodando 100 km em um ano  
     function precoBase(nome) {
         if (nome == 'kwid') return 1000;
-        if (nome == 'uno') return 2000;
-        if (nome == 'renegade') return 1500;
+        if (nome == 'uno') return 1500;
+        if (nome == 'renegade') return 2000;
         if (nome == 'camaro') return 3000;
     }
 
