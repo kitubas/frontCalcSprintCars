@@ -2,36 +2,44 @@
     margin: 0rem;
     padding: 0rem;
 }
+
 .topo{
   
-    width: 100%;
-     background-color: #40423c;
-     color: #ffffff;
    
-     
- }
+    background-color: #40423c;
+    color: #ffffff;
+    padding-top: 20px;
+  
+    
+}
+.topoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
  
  .logo{
      font-family: Verdana, Geneva, Tahoma, sans-serif;
      font-style:italic;
      color: #fc8600;
      font-size: 30pt;
-     padding-left: 4vh;
-     margin-left: 15px;
+     margin: 0px 0px 1.5rem 2.5rem;
+     
      
  }
  .container{
-     display: flex;
      justify-content:space-between;
      align-items: center;
      align-content: center;
-     flex-wrap: wrap;   
+     flex-wrap: nowrap;   
      
  }
  .ancora{
      color: #f1f5f8;
      text-decoration: none;
-     margin:0 20px 0;
+     margin:0 5px 0;
      font-size: 16pt;
      
  
@@ -48,10 +56,10 @@
  
  }
  
- .navegação{
+ .navegacao{
     
      
-     margin:0 20px 0 0;
+     padding-right: 0.3125rem;
 }
  
  
@@ -229,7 +237,7 @@ th{
  }
  .ulista{
      list-style: none;
-     margin: 20px 50px;
+     
      margin: 20px 70px;
      
     

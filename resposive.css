@@ -1,0 +1,30 @@
+@media screen and (max-width:700px){
+   
+    header .topoContainer{
+        display: flex;
+        flex-direction: column;
+        padding-bottom:10px;
+    }
+    .topoContainer {
+        width: 100%;
+        justify-content:center;
+        align-items: center;
+        
+        
+    }
+    .ancora{
+        padding-right: 0px;
+        font-size: 12pt;
+        margin-top: 1.0rem;
+    }
+
+    .logo{
+        margin: 0px 0px 1.0rem;
+    }
+    
+    section.secaoPrincipal{
+        text-align: center;
+        margin: 4rem 0.625rem;
+    }
+
+}
