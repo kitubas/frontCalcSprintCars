@@ -26,5 +26,14 @@
         text-align: center;
         margin: 4rem 0.625rem;
     }
+    table{
+        text-align: center;
+        font-size: 14pt;
+        margin-right: 20px;
+    }
+
+    footer{
+        text-align: center;
+    }
 
 }
