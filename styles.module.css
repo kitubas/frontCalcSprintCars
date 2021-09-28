@@ -91,7 +91,13 @@ main .secaoPrincipal h2{
 }
 
 
+form{
+    text-align: center;
+}
+form p{
+    margin-bottom: 1rem;
 
+}
 
 fieldset{
     border: none;
@@ -153,11 +159,11 @@ button{
     color: #ffffff;
     cursor: pointer;
     box-shadow: 1px 1px 1px 0 #010101;
-    transition: .1s ease all;
+    transition: .5s ease all;
 
 }
 
-button:active{
+button:hover{
     transform:scale(1.1);
     background-color: white;
     color: black;
@@ -188,13 +194,16 @@ button:active{
 }
 
 .precosTituloCoparacao{
-    margin-bottom: 2rem;
+   
     border-bottom:solid orange 0.2rem ;
+   margin-bottom:  2rem;
+    
 }
 .tituloTabela{
     text-align: left;
     font-size: 20pt;
     font-weight: bold;
+   
 }
 
 td, th {

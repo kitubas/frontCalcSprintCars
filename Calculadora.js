@@ -92,13 +92,15 @@ function Calcular() {
                     let carroTr = montarTr(carroSelecionado, tmp, kilometragem, precoTermina);
                     carroTr.classList.add("carro");
                     // carroTr.style.border='solid 2px #000'
+
+                    //monta a tabela do primeiro carro selecionado
                     tbody.appendChild(carroTr);
 
+                        //retira esse carro selecionado na lista
+                    let busca = carrosPossiveis.indexOf(carroSelecionado);
+                    carrosPossiveis.splice(busca, 1);
 
-                    let indice = carrosPossiveis.indexOf(carroSelecionado);
-                    carrosPossiveis.splice(indice, 1);
-
-
+                        //adiciona os outros carros da lista
                     for (let i = 0; i < carrosPossiveis.length; i++) {
                         let precoComeca = precoBase(carrosPossiveis[i]);
                         let precoFinal = calcularPrecoFinal(
@@ -214,7 +216,7 @@ function Calcular() {
             return precoInicio * segundaPorcento;
         }
 
-        return 0;
+        return 0;//uma fação que tem a caract de retornar um number
     }
 
 
