@@ -24,17 +24,15 @@
     
     section.secaoPrincipal{
         text-align: center;
-        margin: 4rem 0.625rem;
+        margin: 4rem 2rem;
     }
-    .containerMain{
-        width: 40%;
-    }
-    .tabela{
+   
+    table{
         
-            width: 40%;
+        
             text-align: center;
         
-        
+        margin-left: 20%;
         text-align: center;
         font-size: 12pt;
         
@@ -43,7 +41,7 @@
     }
 
     th,td{
-        padding: 0.4rem;
+        padding:  1rem 0.5rem;
         font-size: 12px;
 
     }
