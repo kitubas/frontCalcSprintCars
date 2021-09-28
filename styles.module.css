@@ -110,6 +110,7 @@ fieldset{
 table{
     margin: 0 auto;
     text-align: center;
+    
 }
 .tituloTabela{
     text-align: center;
@@ -183,15 +184,27 @@ button:active{
 }
 /* tabela */
 #tabela{
-    max-width: 100%;
+
 	margin-bottom : .5em;
     table-layout: fixed;
 }
 
+.precosTituloCoparacao{
+    margin-bottom: 2rem;
+    border-bottom:solid orange 0.2rem ;
+}
+.tituloTabela{
+    text-align: left;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
 td, th {
-	padding: .7em;
-	margin: 0;
-	border: 1px solid #ccc;
+	
+    padding: 1.875rem;
+    
+	
+	border:1px solid #ccc;
 	text-align: center;
 }
 
@@ -204,7 +217,7 @@ th{
 /* começa footer */
 
 .rodape{
-    width: 100%;
+    
      background-color: #40423c;
      
     

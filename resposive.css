@@ -26,13 +26,23 @@
         text-align: center;
         margin: 4rem 0.625rem;
     }
-    table{
+    .containerMain{
+        width: 70%;
+    }
+    #tabela{
+        
         text-align: center;
-        font-size: 14pt;
-        margin-right: 20px;
+        font-size: 12pt;
+        
+
+        
+    }
+    th,tr{
+        padding: 1.875rem;
     }
 
     footer{
+       
         text-align: center;
     }
 
