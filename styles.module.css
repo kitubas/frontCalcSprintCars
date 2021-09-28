@@ -90,14 +90,9 @@ main .secaoPrincipal h2{
     
 }
 
-.secaoPrincipal p{
-    margin: 1rem 1rem 0.5rem 1rem;
-    font-size: x-large;
-}
 
-form{
-    margin: 0 auto;
-}
+
+
 fieldset{
     border: none;
 }
@@ -110,7 +105,7 @@ fieldset{
 table{
   
     text-align: center;
-   margin-left: 30%;
+   margin-left: 20%;
 }
 .tituloTabela{
     text-align: center;
