@@ -107,6 +107,9 @@ table{
     text-align: center;
    margin-left: 30%;
 }
+.divTabela{
+    margin: 0 auto;
+}
 .tituloTabela{
     text-align: center;
 }
