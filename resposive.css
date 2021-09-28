@@ -27,9 +27,13 @@
         margin: 4rem 0.625rem;
     }
     .containerMain{
-        width: 70%;
+        width: 40%;
     }
-    #tabela{
+    .tabela{
+        
+            width: 40%;
+            text-align: center;
+        
         
         text-align: center;
         font-size: 12pt;
@@ -37,8 +41,11 @@
 
         
     }
-    th,tr{
-        padding: 1.875rem;
+
+    th,td{
+        padding: 0.4rem;
+        font-size: 12px;
+
     }
 
     footer{

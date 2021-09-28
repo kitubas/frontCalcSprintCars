@@ -71,7 +71,7 @@
 
 
 .containerMain{
-    margin: 2rem;
+    margin-bottom: 2rem;
 }
 .secaoPrincipal{
     border: solid 0.1875rem #fc8600; 
@@ -108,9 +108,9 @@ fieldset{
 
 
 table{
-    margin: 0 auto;
+  
     text-align: center;
-    
+   margin-left: 20%;
 }
 .tituloTabela{
     text-align: center;
