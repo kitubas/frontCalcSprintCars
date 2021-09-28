@@ -101,6 +101,7 @@ form p{
 
 fieldset{
     border: none;
+    padding: 0;
 }
 
 .pOpcoes{
@@ -118,6 +119,7 @@ table{
 }
 .tituloTabela{
     text-align: center;
+    margin-left:2rem ;
 }
 
 input{
@@ -196,7 +198,8 @@ button:hover{
 .precosTituloCoparacao{
    
     border-bottom:solid orange 0.2rem ;
-   margin-bottom:  2rem;
+   margin: 0 4rem 4rem 2rem;
+   
     
 }
 .tituloTabela{
@@ -208,7 +211,7 @@ button:hover{
 
 td, th {
 	
-    padding: 1.875rem;
+    padding: 0.5rem;
     
 	
 	border:1px solid #ccc;
@@ -258,7 +261,7 @@ th{
  .ulista{
      list-style: none;
      
-     margin: 20px 70px;
+     margin: 20px 80px;
      
     
      

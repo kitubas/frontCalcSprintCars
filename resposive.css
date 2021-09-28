@@ -24,10 +24,14 @@
     
     section.secaoPrincipal{
         text-align: center;
-        margin: 4rem 1rem;
+        margin: 4rem 2rem;
     }
+
    form{
        width: 100%;
+   }
+   .tituloTabela {
+       text-align: center;
    }
     table{
         
