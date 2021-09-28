@@ -1,4 +1,4 @@
-@media screen and (max-width:700px){
+@media screen and (max-width:600px){
    
     header .topoContainer{
         display: flex;
@@ -35,10 +35,6 @@
    }
     table{
         
-        
-            text-align: center;
-        
-        margin-left: 15%;
         text-align: center;
         font-size: 10pt;
         

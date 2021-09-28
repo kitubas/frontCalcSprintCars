@@ -101,7 +101,7 @@ form p{
 
 fieldset{
     border: none;
-    padding: 0;
+    padding: 0px;
 }
 
 .pOpcoes{
@@ -109,14 +109,18 @@ fieldset{
 }
 
 
+
+.divTabela{
+    display: flex;
+justify-content: center;
+align-items:center ;
+    
+}
 table{
   
     text-align: center;
-   margin-left: 30%;
 }
-.divTabela{
-    margin: 0 auto;
-}
+
 .tituloTabela{
     text-align: center;
     margin-left:2rem ;
@@ -211,7 +215,7 @@ button:hover{
 
 td, th {
 	
-    padding: 0.5rem;
+    padding: 1rem;
     
 	
 	border:1px solid #ccc;
