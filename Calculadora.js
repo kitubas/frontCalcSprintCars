@@ -6,6 +6,11 @@ function Calcular() {
 
     let resultAluguel = document.getElementById('resulado-aluguel')
 
+    let resultadoPesquisa = document.getElementById('resultado_pesquisa');
+
+    resultadoPesquisa.style.display='contents'
+
+
     //lista dos carros
     let carros = ['kwid', 'uno', 'renegade', 'camaro'];
 

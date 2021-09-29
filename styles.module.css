@@ -193,6 +193,11 @@ button:hover{
     
 }
 /* tabela */
+
+#resultado_pesquisa{
+    display: none;
+}
+
 #tabela{
 
 	margin-bottom : .5em;
