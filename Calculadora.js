@@ -60,8 +60,8 @@ function Calcular() {
             //Recarrega página do servidor (força novo GET)
             window.location.reload(true);
             return erros;
-            
-        } 
+
+        }
 
         else {
 
@@ -70,7 +70,7 @@ function Calcular() {
 
                 //Recarrega página do servidor (força novo GET)
                 window.location.reload(true);
-                
+
             }
             ////////////// carregar tabela
             else {
@@ -95,11 +95,11 @@ function Calcular() {
                     //monta a tabela do primeiro carro selecionado
                     tbody.appendChild(carroTr);
 
-                        //retira esse carro selecionado na lista
+                    //retira esse carro selecionado na lista
                     let busca = carrosPossiveis.indexOf(carroSelecionado);
                     carrosPossiveis.splice(busca, 1);
 
-                        //adiciona os outros carros da lista
+                    //adiciona os outros carros da lista
                     for (let i = 0; i < carrosPossiveis.length; i++) {
                         let precoComeca = precoBase(carrosPossiveis[i]);
                         let precoFinal = calcularPrecoFinal(
@@ -128,12 +128,13 @@ function Calcular() {
 
                 resultAluguel.appendChild(resultado);
                 resultAluguel.classList.add('secao-respota');
-               
-               
 
-                Tagh2.innerHTML='Resposta'
+
+
+                Tagh2.innerHTML = 'Resposta'
                 resultado.innerHTML = `O aluguel sairá por ${precoFinal}`;
                
+
                 //criar um elemento do js para o html com o comando createElement("tag html");
 
                 //função pesquisar 
@@ -174,19 +175,33 @@ function Calcular() {
         }
     }
 
+    function montarTr(nome, tempo, km, precoTotal) {
+        let modeloTr = document.createElement("tr");
+        modeloTr.classList.add("carros");
 
+        modeloTr.appendChild(montarTd(nome, "info-nome"));
+        modeloTr.appendChild(montarTd(tempo, "info-tempo"));
+        modeloTr.appendChild(montarTd(km, "info-km"));
+        modeloTr.appendChild(montarTd(precoTotal, "info-precoFinal"));
 
+        return modeloTr;
+    }
 
+    //criar um td e uma class para cada td
+    function montarTd(dados, classe) {
+        let td = document.createElement("td");
+        td.textContent = dados;
+        td.classList.add(classe);
 
-
+        return td;
+    }
 
 
 
     function calcularPrecoFinal(precoComeca, tmpSelect, kmSelect) {
         if (tmpSelect == tempo1 && kmSelect == km1) {
             return precoComeca;
-        }
-        else {
+        } else {
             return Number(
                 precoComeca +
                 proporcaoQtdKm(precoComeca, kmSelect) +
@@ -196,12 +211,12 @@ function Calcular() {
     }
 
     //'kwid', 'uno', 'renegade', 'camaro'
-    //preço base = O carro rodando 100 km em um ano  
+    //preço base = O carro rodando 100 km em um ano
     function precoBase(nome) {
-        if (nome == 'kwid') return 1000;
-        if (nome == 'uno') return 1500;
-        if (nome == 'renegade') return 2000;
-        if (nome == 'camaro') return 3000;
+        if (nome == "kwid") return 1000;
+        if (nome == "uno") return 1500;
+        if (nome == "renegade") return 2000;
+        if (nome == "camaro") return 3000;
     }
 
 
