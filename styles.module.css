@@ -101,7 +101,7 @@ form p{
 
 fieldset{
     border: none;
-    padding: 0px;
+    
 }
 
 .pOpcoes{
@@ -184,7 +184,7 @@ button:hover{
 
 #foto{
     margin-top: 1rem;
-    width: 18.75rem;
+    max-width: 18.75rem;
     transition: .5s ease all;
 }
 

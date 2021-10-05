@@ -9,7 +9,6 @@ function Calcular() {
     //lista dos carros
     let carros = ['kwid', 'uno', 'renegade', 'camaro'];
 
-    let Pesquisa = Pesquisar();
     //porcetagem
     let primeiraPorcento = 0.1
     let segundaPorcento = 0.15
@@ -123,11 +122,18 @@ function Calcular() {
 
                 }
                 //seção resposta
+                let Tagh2 = document.createElement("h2");
+                Tagh2.classList.add('titulo-resposta');
+                resultAluguel.appendChild(Tagh2);
+
                 resultAluguel.appendChild(resultado);
                 resultAluguel.classList.add('secao-respota');
+               
+               
 
+                Tagh2.innerHTML='Resposta'
                 resultado.innerHTML = `O aluguel sairá por ${precoFinal}`;
-
+               
                 //criar um elemento do js para o html com o comando createElement("tag html");
 
                 //função pesquisar 
