@@ -182,13 +182,6 @@ function Calcular() {
 
 
 
-
-
-    //////////////////////////////////////////////////////
-
-
-
-
     function calcularPrecoFinal(precoComeca, tmpSelect, kmSelect) {
         if (tmpSelect == tempo1 && kmSelect == km1) {
             return precoComeca;
@@ -222,28 +215,20 @@ function Calcular() {
             return precoInicio * segundaPorcento;
         }
 
-        return 0;//uma fação que tem a caract de retornar um number
+
+
+
+
+
+
+
+
     }
 
-
     function calcularProporcaoTempo(precoInicio, tmpSelec) {
-
         if (tmpSelec === tempo2) return precoInicio * primeiraPorcento;
         if (tmpSelec === tempo3) return precoInicio * segundaPorcento;
 
         return 0;
     }
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
