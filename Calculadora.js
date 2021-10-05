@@ -62,118 +62,118 @@ function Calcular() {
             return erros;
 
         }
-
-        else {
-
-            if (nomeCarro.length === 0) {
-                window.alert('⚠ escolha um modelo de carro!');
-
-                //Recarrega página do servidor (força novo GET)
-                window.location.reload(true);
-
-            }
-            ////////////// carregar tabela
-            else {
-
-                criarTabela(nomeCarro, carros, tempoFicariaSelecionado, kilometragemSelecionada);
-
-                function criarTabela(carroSelecionado, carrosPossiveis, tmp, kilometragem) {
-                    let tbody = document.querySelector("#tabela-carros");
-                    tbody.innerHTML = ' ';
-
-                    let precoInicial = precoBase(carroSelecionado)
-                    let precoTermina = calcularPrecoFinal(
-                        precoInicial,
-                        tmp,
-                        kilometragem
-                    );
-
-                    let carroTr = montarTr(carroSelecionado, tmp, kilometragem, precoTermina);
-                    carroTr.classList.add("carro");
-                    // carroTr.style.border='solid 2px #000'
-
-                    //monta a tabela do primeiro carro selecionado
-                    tbody.appendChild(carroTr);
-
-                    //retira esse carro selecionado na lista
-                    let busca = carrosPossiveis.indexOf(carroSelecionado);
-                    carrosPossiveis.splice(busca, 1);
-
-                    //adiciona os outros carros da lista
-                    for (let i = 0; i < carrosPossiveis.length; i++) {
-                        let precoComeca = precoBase(carrosPossiveis[i]);
-                        let precoFinal = calcularPrecoFinal(
-                            precoComeca,
-                            tempoFicariaSelecionado,
-                            kilometragemSelecionada
-                        );
+    }
 
 
-                        let carroTrFor = montarTr(carrosPossiveis[i], tmp, kilometragem, precoFinal);
+    if (nomeCarro.length === 0) {
+        window.alert('⚠ escolha um modelo de carro!');
 
-                        console.log(carroTrFor);
-                        tbody.appendChild(carroTrFor);
+        //Recarrega página do servidor (força novo GET)
+        window.location.reload(true);
 
+    }
+    ////////////// carregar tabela
+    else {
 
+        criarTabela(nomeCarro, carros, tempoFicariaSelecionado, kilometragemSelecionada);
 
-                    }
+        function criarTabela(carroSelecionado, carrosPossiveis, tmp, kilometragem) {
+            let tbody = document.querySelector("#tabela-carros");
+            tbody.innerHTML = ' ';
 
+            let precoInicial = precoBase(carroSelecionado)
+            let precoTermina = calcularPrecoFinal(
+                precoInicial,
+                tmp,
+                kilometragem
+            );
 
+            let carroTr = montarTr(carroSelecionado, tmp, kilometragem, precoTermina);
+            carroTr.classList.add("carro");
+            // carroTr.style.border='solid 2px #000'
 
-                }
-                //seção resposta
-                let Tagh2 = document.createElement("h2");
-                Tagh2.classList.add('titulo-resposta');
-                resultAluguel.appendChild(Tagh2);
+            //monta a tabela do primeiro carro selecionado
+            tbody.appendChild(carroTr);
 
-                resultAluguel.appendChild(resultado);
-                resultAluguel.classList.add('secao-respota');
+            //retira esse carro selecionado na lista
+            let busca = carrosPossiveis.indexOf(carroSelecionado);
+            carrosPossiveis.splice(busca, 1);
 
-
-
-                Tagh2.innerHTML = 'Resposta'
-                resultado.innerHTML = `O aluguel sairá por ${precoFinal}`;
-               
-
-                //criar um elemento do js para o html com o comando createElement("tag html");
-
-                //função pesquisar 
-
-            }
-
-            function montarTr(nome, tempo, km, precoTotal) {
-
-                let modeloTr = document.createElement("tr");
-                modeloTr.classList.add("carros");
-
-
-                modeloTr.appendChild(montarTd(nome, "info-nome"));
-                modeloTr.appendChild(montarTd(tempo, "info-tempo"));
-                modeloTr.appendChild(montarTd(km, "info-km"));
-                modeloTr.appendChild(montarTd(precoTotal, "info-precoFinal"));
-
-
+            //adiciona os outros carros da lista
+            for (let i = 0; i < carrosPossiveis.length; i++) {
+                let precoComeca = precoBase(carrosPossiveis[i]);
+                let precoFinal = calcularPrecoFinal(
+                    precoComeca,
+                    tempoFicariaSelecionado,
+                    kilometragemSelecionada
+                );
 
 
-                return modeloTr;
+                let carroTrFor = montarTr(carrosPossiveis[i], tmp, kilometragem, precoFinal);
 
-            }
+                console.log(carroTrFor);
+                tbody.appendChild(carroTrFor);
 
 
-            //criar um td e uma class para cada td
-            function montarTd(dados, classe) {
-                let td = document.createElement('td');
-                td.textContent = dados;
-                td.classList.add(classe);
-
-                return td;
 
             }
 
 
 
         }
+        //seção resposta
+        let Tagh2 = document.createElement("h2");
+        Tagh2.classList.add('titulo-resposta');
+        resultAluguel.appendChild(Tagh2);
+
+        resultAluguel.appendChild(resultado);
+        resultAluguel.classList.add('secao-respota');
+
+
+
+        Tagh2.innerHTML = 'Resposta'
+        resultado.innerHTML = `O aluguel sairá por ${precoFinal}`;
+
+
+        //criar um elemento do js para o html com o comando createElement("tag html");
+
+        //função pesquisar 
+
     }
+
+    function montarTr(nome, tempo, km, precoTotal) {
+
+        let modeloTr = document.createElement("tr");
+        modeloTr.classList.add("carros");
+
+
+        modeloTr.appendChild(montarTd(nome, "info-nome"));
+        modeloTr.appendChild(montarTd(tempo, "info-tempo"));
+        modeloTr.appendChild(montarTd(km, "info-km"));
+        modeloTr.appendChild(montarTd(precoTotal, "info-precoFinal"));
+
+
+
+
+        return modeloTr;
+
+    }
+
+
+    //criar um td e uma class para cada td
+    function montarTd(dados, classe) {
+        let td = document.createElement('td');
+        td.textContent = dados;
+        td.classList.add(classe);
+
+        return td;
+
+    }
+
+
+
+
+
 
     function montarTr(nome, tempo, km, precoTotal) {
         let modeloTr = document.createElement("tr");
@@ -246,4 +246,5 @@ function Calcular() {
 
         return 0;
     }
+
 }
