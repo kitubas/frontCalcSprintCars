@@ -24,8 +24,9 @@
     
     section.secaoPrincipal{
         text-align: center;
-        margin: 4rem 2rem;
+        margin: 4rem 1rem;
     }
+
 
     form{
         padding: 0 10px;
@@ -33,6 +34,7 @@
    
    .tituloTabela {
        text-align: center;
+
    }
     table{
         
