@@ -1,4 +1,4 @@
-let campoFiltro = document.querySelector("#inputModelo")
+/*let campoFiltro = document.querySelector("#inputModelo")
 
 //primeiro passo:colocar um escultador de evento
 //passar um função anoni quando alguém clicar naquele campo
@@ -69,4 +69,4 @@ campoFiltro.addEventListener("input", function () {
 
     
 
-});
+});*/
