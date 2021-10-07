@@ -3,6 +3,7 @@ function Calcular() {
   let nomeCarro = String(nomeDoCarro.value);
 
   let resultAluguel = document.getElementById("resulado-aluguel");
+  let tituloH2 = document.getElementById("titulo-h2-resultado");
   // resultAluguel.innerHTML='';
   
 
@@ -64,19 +65,25 @@ function Calcular() {
       /////////////////////////////////////
       //seção resposta
       ////////////////////////////////////
+      
+
       let Tagh2 = document.createElement("h2");
-      Tagh2.classList.add("titulo-resposta");
+      tituloH2.innerHTML=' '
+      
       Tagh2.innerHTML = 'Resposta';
-
-      resultAluguel.appendChild(Tagh2);
-
+      Tagh2.classList.add("titulo-resposta");
+      tituloH2.appendChild(Tagh2);
+      
+     
 
       resultAluguel.appendChild(resultado);
       resultAluguel.classList.add("secao-respota");
 
 
       resultado.innerHTML = `O aluguel sairá por ${precoFinal}`;
-
+      
+      
+      
       //criar um elemento do js para o html com o comando createElement("tag html");
 
       //função pesquisar
@@ -235,4 +242,5 @@ function Calcular() {
 
     return 0;
   }
+  
 }
