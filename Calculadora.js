@@ -1,3 +1,5 @@
+
+
 function Calcular() {
   let nomeDoCarro = document.getElementById("inputModelo");
   let nomeCarro = String(nomeDoCarro.value);
@@ -5,7 +7,7 @@ function Calcular() {
   let resultAluguel = document.getElementById("resulado-aluguel");
   let tituloH2 = document.getElementById("titulo-h2-resultado");
   // resultAluguel.innerHTML='';
-  
+
 
   let resultadoPesquisa = document.getElementById("resultado_pesquisa");
 
@@ -52,66 +54,92 @@ function Calcular() {
   ///validações
   erro(carros, nomeCarro);
 
-  
-    ////////////// carregar tabela
-      criarTabela(
-        nomeCarro,
-        carros,
-        tempoFicariaSelecionado,
-        kilometragemSelecionada
-      );
-    //////////////////////
 
-      /////////////////////////////////////
-      //seção resposta
-      ////////////////////////////////////
-      
+  ////////////// carregar tabela
+  criarTabela(
+    campoFiltro,
+    carros,
+    tempoFicariaSelecionado,
+    kilometragemSelecionada
+  );
+  //////////////////////
 
-      let Tagh2 = document.createElement("h2");
-      tituloH2.innerHTML=' '
-      
-      Tagh2.innerHTML = 'Resposta';
-      Tagh2.classList.add("titulo-resposta");
-      tituloH2.appendChild(Tagh2);
-      
-     
-
-      resultAluguel.appendChild(resultado);
-      resultAluguel.classList.add("secao-respota");
+  /////////////////////////////////////
+  //seção resposta
+  ////////////////////////////////////
 
 
-      resultado.innerHTML = `O aluguel sairá por ${precoFinal}`;
-      
-      
-      
-      //criar um elemento do js para o html com o comando createElement("tag html");
+  let Tagh2 = document.createElement("h2");
+  tituloH2.innerHTML = ' '
 
-      //função pesquisar
-    
-  
+  Tagh2.innerHTML = 'Resposta';
+  Tagh2.classList.add("titulo-resposta");
+  tituloH2.appendChild(Tagh2);
+
+
+
+  resultAluguel.appendChild(resultado);
+  resultAluguel.classList.add("secao-respota");
+
+
+  resultado.innerHTML = `O aluguel sairá por ${precoFinal}`;
+
+
+
+  //criar um elemento do js para o html com o comando createElement("tag html");
+
+  //função pesquisar
+
+
 
   //////////////////////////////////
-            //funções//
+  //funções//
   //////////////////////////////////
 
 
   function erro(nomes, carroSelecionado) {
-    if (nomes.indexOf(carroSelecionado) === -1 && carroSelecionado.length > 0) {
-      
+    try {
+      if (nomes.indexOf(carroSelecionado) === -1 && carroSelecionado.length > 0) {
 
-      window.alert("⚠ Esse modelo não se encontra em nossa frota!");
-      //Recarrega página do servidor (força novo GET)
-      window.location.reload(true);
-           }
+        resultAluguel.classList.remove("secao-respota")
+        window.alert("⚠ Esse modelo não se encontra em nossa frota!");
+        ;
+        //Recarrega página do servidor (força novo GET)
+        window.location.reload(true);
+        throw new ReferenceError("envie os parametros")
 
-    if (nomeCarro.length === 0) {
-      window.alert("⚠ escolha um modelo de carro!");
+      }
 
-      //Recarrega página do servidor (força novo GET)
-      window.location.reload(true);
+      if (nomeCarro.length === 0) {
+        resultAluguel.classList.remove("secao-respota");
+        //Recarrega página do servidor (força novo GET)
+        window.location.reload(true);
+        window.alert("⚠ escolha um modelo de carro!");
+        throw new TypeError('Escolha um moldelo')
+
+
+      }
+    }
+    //o catch caputra o erro
+    catch (error) {
+      if (error instanceof ReferenceError) {
+        console.log("Este erro é um ReferenceError")
+        console.log(error.message)
+        console.log(error.stack)
+      }
+      else if (error instanceof TypeError) {
+        console.log("Este erro é um TypeError")
+        console.log(error.message)
+        console.log(error.stack)
+      }
+      else {
+        console.log('Tipo de erro não esperado:' + error)
+      }
+
     }
 
-}
+
+  }
 
   function criarTabela(
     carroSelecionado,
@@ -133,13 +161,10 @@ function Calcular() {
     );
     carroTr.classList.add("carro");
     // carroTr.style.border='solid 2px #000'
-
-    //monta a tabela do primeiro carro selecionado
-    tbody.appendChild(carroTr);
-
-    //retira esse carro selecionado na lista
+      //retira esse carro selecionado na lista
     let busca = carrosPossiveis.indexOf(carroSelecionado);
-    carrosPossiveis.splice(busca, 1);
+    
+    
 
     //adiciona os outros carros da lista
     for (let i = 0; i < carrosPossiveis.length; i++) {
@@ -162,7 +187,7 @@ function Calcular() {
     }
   }
 
-  
+
   function montarTr(nome, tempo, km, precoTotal) {
     let modeloTr = document.createElement("tr");
     modeloTr.classList.add("carros");
@@ -211,8 +236,8 @@ function Calcular() {
     } else {
       return Number(
         precoComeca +
-          proporcaoQtdKm(precoComeca, kmSelect) +
-          calcularProporcaoTempo(precoComeca, tmpSelect)
+        proporcaoQtdKm(precoComeca, kmSelect) +
+        calcularProporcaoTempo(precoComeca, tmpSelect)
       );
     }
   }
@@ -242,5 +267,5 @@ function Calcular() {
 
     return 0;
   }
-  
+
 }
