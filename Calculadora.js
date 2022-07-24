@@ -82,7 +82,7 @@ function Calcular() {
   resultAluguel.classList.add("secao-respota");
 
 
-  resultado.innerHTML = `O aluguel sairá por ${precoFinal}`;
+  resultado.innerHTML = `O aluguel sairá por ${precoFinal}R$.`;
 
 
 
